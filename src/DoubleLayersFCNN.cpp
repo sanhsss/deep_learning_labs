@@ -70,7 +70,7 @@ void DoubleLayersFCNN::calculateOutputLayer() {
 	delete[] g;
 }
 
-void DoubleLayersFCNN::calculateGradients(double *gradientWeightsLayer1, double *gradientWeightsLayer2) {
+void DoubleLayersFCNN::calculateGradients(double *gradient1, double *gradient2) {
 	double *sigmaLayer2 = new double[outputSize];
 	double *summa = new double[hiddenSize];
 	double *dActFuncHiddenLayer = new double[hiddenSize];
@@ -78,7 +78,7 @@ void DoubleLayersFCNN::calculateGradients(double *gradientWeightsLayer1, double 
 	for (int s = 0; s < hiddenSize; s++) {
 		for (int j = 0; j < outputSize; j++) {
 			sigmaLayer2[j] = outputLayerFact[j] - outputLayerExpected[j];
-			gradientWeightsLayer2[s*outputSize + j] = sigmaLayer2[j] * hiddenLayer[s];
+			gradient2[s*outputSize + j] = sigmaLayer2[j] * hiddenLayer[s];
 		}
 	}
 
@@ -95,7 +95,7 @@ void DoubleLayersFCNN::calculateGradients(double *gradientWeightsLayer1, double 
 
 	for (int i = 0; i < inputSize; i++) {
 		for (int s = 0; s < hiddenSize; s++) {
-			gradientWeightsLayer1[i*hiddenSize + s] = dActFuncHiddenLayer[s] * summa[s] * inputLayer[i];
+			gradient1[i*hiddenSize + s] = dActFuncHiddenLayer[s] * summa[s] * inputLayer[i];
 		}
 	}
 

@@ -19,3 +19,7 @@ CMakeFiles/TargetDirectories.txt
 CMakeFiles/3.10.2/VCTargetsPath.txt
 CMakeFiles/cmake.check_cache
 *.depend
+*.rule
+*.db
+*.opendb
+*.suo
