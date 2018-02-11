@@ -1,0 +1,6 @@
+Nata config1
+data - ok
+layers - ok
+I'm ready to fit!
+('Fit time: %f', 417.13)
+EvalMetric: {'accuracy': 0.8131004366812227}
