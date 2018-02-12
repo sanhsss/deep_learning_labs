@@ -110,8 +110,8 @@ void DoubleLayersFCNN::correctWeights(double *gradientWeightsLayer1, double *gra
 
 double DoubleLayersFCNN::crossEntropy(double **trainData, double *trainLabel, int sampleSize) {
 	double crossEntropy = 0;
-	for (int image = 0; image < sampleSize; image++) {
-		setInputOutputExpectedLayers(trainData[image], trainLabel[image]);
+	for (int item = 0; item < sampleSize; item++) {
+		setInputOutputExpectedLayers(trainData[item], trainLabel[item]);
 		calculateOutputLayer();
 		for (int j = 0; j < outputSize; j++) {
 			crossEntropy += outputLayerExpected[j] * log(outputLayerFact[j]);
@@ -144,8 +144,8 @@ void DoubleLayersFCNN::train(double **data, double *label, int sampleSize, int n
 
 	for (int epoch = 0; epoch < numberEpochs; epoch++) {
 		mix(order, sampleSize);
-		for (int image = 0; image < sampleSize; image++) {
-			setInputOutputExpectedLayers(data[order[image]], label[order[image]]);
+		for (int item = 0; item < sampleSize; item++) {
+			setInputOutputExpectedLayers(data[order[item]], label[order[item]]);
 			calculateOutputLayer();
 			calculateGradients(gradientWeightsLayer1, gradientWeightsLayer2);
 			correctWeights(gradientWeightsLayer1, gradientWeightsLayer2, learningRate);
