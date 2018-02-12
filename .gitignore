@@ -23,3 +23,6 @@ CMakeFiles/cmake.check_cache
 *.db
 *.opendb
 *.suo
+*.pdb
+*.ilk
+/Win32/Release/ALL_BUILD/ALL_BUILD.vcxprojResolveAssemblyReference.cache

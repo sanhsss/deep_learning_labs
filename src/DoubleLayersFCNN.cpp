@@ -71,37 +71,32 @@ void DoubleLayersFCNN::calculateOutputLayer() {
 }
 
 void DoubleLayersFCNN::calculateGradients(double *gradient1, double *gradient2) {
-	double *sigmaLayer2 = new double[outputSize];
-	double *summa = new double[hiddenSize];
-	double *dActFuncHiddenLayer = new double[hiddenSize];
+	double *delta2 = new double[outputSize];
+	double *delta1 = new double[hiddenSize];
 
 	for (int s = 0; s < hiddenSize; s++) {
 		for (int j = 0; j < outputSize; j++) {
-			sigmaLayer2[j] = outputLayerFact[j] - outputLayerExpected[j];
-			gradient2[s*outputSize + j] = sigmaLayer2[j] * hiddenLayer[s];
+			delta2[j] = outputLayerFact[j] - outputLayerExpected[j];
+			gradient2[s*outputSize + j] = delta2[j] * hiddenLayer[s];
 		}
 	}
 
 	for (int s = 0; s < hiddenSize; s++) {
-		dActFuncHiddenLayer[s] = dtanh(hiddenLayer[s]);
-	}
-
-	for (int s = 0; s < hiddenSize; s++) {
-		summa[s] = 0;
+		delta1[s] = 0;
 		for (int j = 0; j < outputSize; j++) {
-			summa[s] += sigmaLayer2[j] * weightsLayer2[s*outputSize + j];
+			delta1[s] += delta2[j] * weightsLayer2[s*outputSize + j];
 		}
+		delta1[s] = delta1[s] * dtanh(hiddenLayer[s]);
 	}
 
 	for (int i = 0; i < inputSize; i++) {
 		for (int s = 0; s < hiddenSize; s++) {
-			gradient1[i*hiddenSize + s] = dActFuncHiddenLayer[s] * summa[s] * inputLayer[i];
+			gradient1[i*hiddenSize + s] = delta1[s] * inputLayer[i];
 		}
 	}
 
-	delete[] sigmaLayer2;
-	delete[] summa;
-	delete[] dActFuncHiddenLayer;
+	delete[] delta2;
+	delete[] delta1;
 }
 
 void DoubleLayersFCNN::correctWeights(double *gradientWeightsLayer1, double *gradientWeightsLayer2, double learningRate)
