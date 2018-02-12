@@ -27,14 +27,15 @@ NetSettings getSettings(char* fname)
 	FILE * settings = fopen(fname, "r");
 	if (!feof(settings))
 	{
+		char* s = new char[250];
 		fscanf(settings, "%s", res.fnameTrainData);
 		fscanf(settings, "%s", res.fnameTrainLabels);
 		fscanf(settings, "%s", res.fnameTestData);
 		fscanf(settings, "%s", res.fnameTestLabels);
-		fscanf(settings, "%lf", &res.learningRate);
-		fscanf(settings, "%lf", &res.errorCrossEntropy);
-		fscanf(settings, "%i", &res.hiddenSize);
-		fscanf(settings, "%i", &res.numberEpochs);
+		fscanf(settings, "%lf%s", &res.learningRate, s);
+		fscanf(settings, "%lf%s", &res.errorCrossEntropy, s);
+		fscanf(settings, "%i%s", &res.hiddenSize, s);
+		fscanf(settings, "%i%s", &res.numberEpochs, s);
 	}
 	fclose(settings);
 	return res;
