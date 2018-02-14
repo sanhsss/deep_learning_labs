@@ -1,0 +1,26 @@
+/tmp/slurmd/job270743/slurm_script: line 12: /opt/xcat/bin:/opt/xcat/sbin:/opt/xcat/share/xcat/tools:/usr/lib64/qt-3.3/bin:/home/deeplearning/perl5/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/deeplearning/.local/bin:/home/deeplearning/bin: No such file or directory
+[22:19:55] src/nnvm/legacy_json_util.cc:209: Loading symbol saved by previous version v0.8.0. Attempting to upgrade...
+[22:19:55] src/nnvm/legacy_json_util.cc:217: Symbol successfully upgraded!
+[22:20:11] src/operator/././cudnn_algoreg-inl.h:107: Running performance tests to find the best convolution algorithm, this can take a while... (setting env variable MXNET_CUDNN_AUTOTUNE_DEFAULT to 0 to disable)
+[22:20:12] src/io/iter_image_recordio_2.cc:170: ImageRecordIOParser2: ../lab2/data/dataset_val.rec, use 4 threads for decoding..
+[22:20:12] src/io/iter_image_recordio_2.cc:170: ImageRecordIOParser2: ../lab2/data/dataset_val.rec, use 4 threads for decoding..
+INFO:root:Epoch[0] Batch [500]	Speed: 57222.83 samples/sec	accuracy=0.984471
+INFO:root:Epoch[0] Train-accuracy=0.992639
+INFO:root:Epoch[0] Time cost=1.075
+INFO:root:Epoch[0] Validation-accuracy=0.992269
+INFO:root:Epoch[1] Batch [500]	Speed: 69396.16 samples/sec	accuracy=0.992715
+INFO:root:Epoch[1] Train-accuracy=0.994028
+INFO:root:Epoch[1] Time cost=0.827
+INFO:root:Epoch[1] Validation-accuracy=0.993682
+INFO:root:Epoch[2] Batch [500]	Speed: 69390.47 samples/sec	accuracy=0.993513
+INFO:root:Epoch[2] Train-accuracy=0.994583
+INFO:root:Epoch[2] Time cost=0.828
+INFO:root:Epoch[2] Validation-accuracy=0.994346
+INFO:root:Epoch[3] Batch [500]	Speed: 69430.67 samples/sec	accuracy=0.994052
+INFO:root:Epoch[3] Train-accuracy=0.994722
+INFO:root:Epoch[3] Time cost=0.823
+INFO:root:Epoch[3] Validation-accuracy=0.994660
+INFO:root:Epoch[4] Batch [500]	Speed: 76271.03 samples/sec	accuracy=0.994351
+INFO:root:Epoch[4] Train-accuracy=0.995000
+INFO:root:Epoch[4] Time cost=0.750
+INFO:root:Epoch[4] Validation-accuracy=0.994991
