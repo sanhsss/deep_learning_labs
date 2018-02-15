@@ -1,0 +1,6 @@
+I'm here1
+data - ok
+layers - ok
+I'm ready to fit!
+('Fit time: %f', 337.65000000000003)
+EvalMetric: {'accuracy': 0.7054847161572052}
