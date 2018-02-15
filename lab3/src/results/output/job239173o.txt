@@ -1,0 +1,18 @@
+Sem config2
+data - ok
+layers - ok
+I'm ready to fit!
+('Fit time: %f', 202.12)
+EvalMetric: {'accuracy': 0.8555109170305677}
+Sem config3
+data - ok
+layers - ok
+I'm ready to fit!
+('Fit time: %f', 276.96)
+EvalMetric: {'accuracy': 0.8546375545851529}
+Sem config4
+data - ok
+layers - ok
+I'm ready to fit!
+('Fit time: %f', 179.32999999999998)
+EvalMetric: {'accuracy': 0.7054847161572052}
