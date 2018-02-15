@@ -1,0 +1,46 @@
+/tmp/slurmd/job270274/slurm_script: line 12: /opt/xcat/bin:/opt/xcat/sbin:/opt/xcat/share/xcat/tools:/usr/lib64/qt-3.3/bin:/home/deeplearning/perl5/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/deeplearning/.local/bin:/home/deeplearning/bin: No such file or directory
+[18:22:23] src/io/iter_image_recordio_2.cc:170: ImageRecordIOParser2: ../lab2/data/dataset_val.rec, use 4 threads for decoding..
+[18:22:28] src/io/iter_image_recordio_2.cc:170: ImageRecordIOParser2: ../lab2/data/dataset_val.rec, use 4 threads for decoding..
+[18:22:28] src/nnvm/legacy_json_util.cc:209: Loading symbol saved by previous version v0.8.0. Attempting to upgrade...
+[18:22:28] src/nnvm/legacy_json_util.cc:217: Symbol successfully upgraded!
+[18:22:30] src/operator/././cudnn_algoreg-inl.h:107: Running performance tests to find the best convolution algorithm, this can take a while... (setting env variable MXNET_CUDNN_AUTOTUNE_DEFAULT to 0 to disable)
+INFO:root:Epoch[0] Batch [500]	Speed: 75.11 samples/sec	accuracy=0.741198
+INFO:root:Epoch[0] Batch [1000]	Speed: 75.09 samples/sec	accuracy=0.833960
+INFO:root:Epoch[0] Train-accuracy=0.846944
+INFO:root:Epoch[0] Time cost=762.066
+INFO:root:Epoch[0] Validation-accuracy=0.872664
+INFO:root:Epoch[1] Batch [500]	Speed: 75.05 samples/sec	accuracy=0.864351
+INFO:root:Epoch[1] Batch [1000]	Speed: 75.05 samples/sec	accuracy=0.879440
+INFO:root:Epoch[1] Train-accuracy=0.880278
+INFO:root:Epoch[1] Time cost=762.464
+INFO:root:Epoch[1] Validation-accuracy=0.894603
+INFO:root:Epoch[2] Batch [500]	Speed: 75.21 samples/sec	accuracy=0.889461
+INFO:root:Epoch[2] Batch [1000]	Speed: 75.21 samples/sec	accuracy=0.896600
+INFO:root:Epoch[2] Train-accuracy=0.895000
+INFO:root:Epoch[2] Time cost=760.857
+INFO:root:Epoch[2] Validation-accuracy=0.911249
+INFO:root:Epoch[3] Batch [500]	Speed: 75.24 samples/sec	accuracy=0.904271
+INFO:root:Epoch[3] Batch [1000]	Speed: 75.22 samples/sec	accuracy=0.910360
+INFO:root:Epoch[3] Train-accuracy=0.908611
+INFO:root:Epoch[3] Time cost=760.668
+INFO:root:Epoch[3] Validation-accuracy=0.923127
+INFO:root:Epoch[4] Batch [500]	Speed: 75.22 samples/sec	accuracy=0.916607
+INFO:root:Epoch[4] Batch [1000]	Speed: 75.22 samples/sec	accuracy=0.918440
+INFO:root:Epoch[4] Train-accuracy=0.915139
+INFO:root:Epoch[4] Time cost=760.772
+INFO:root:Epoch[4] Validation-accuracy=0.864140
+INFO:root:Epoch[5] Batch [500]	Speed: 75.08 samples/sec	accuracy=0.924511
+INFO:root:Epoch[5] Batch [1000]	Speed: 75.04 samples/sec	accuracy=0.921960
+INFO:root:Epoch[5] Train-accuracy=0.921806
+INFO:root:Epoch[5] Time cost=762.379
+INFO:root:Epoch[5] Validation-accuracy=0.934830
+INFO:root:Epoch[6] Batch [500]	Speed: 75.08 samples/sec	accuracy=0.928862
+INFO:root:Epoch[6] Batch [1000]	Speed: 75.04 samples/sec	accuracy=0.931000
+INFO:root:Epoch[6] Train-accuracy=0.928611
+INFO:root:Epoch[6] Time cost=762.428
+INFO:root:Epoch[6] Validation-accuracy=0.935860
+INFO:root:Epoch[7] Batch [500]	Speed: 75.05 samples/sec	accuracy=0.934451
+INFO:root:Epoch[7] Batch [1000]	Speed: 75.07 samples/sec	accuracy=0.935680
+INFO:root:Epoch[7] Train-accuracy=0.934167
+INFO:root:Epoch[7] Time cost=762.340
+INFO:root:Epoch[7] Validation-accuracy=0.943214
