@@ -1,0 +1,6 @@
+[5000, 3000, 1000, 800, 50]
+['tanh', 'relu', 'tanh', 'tanh', 'sigmoid']
+['tanh', 'relu', 'tanh', 'tanh', 'softmax']
+Training start
+Clock time difference: 299.280000
+EvalMetric: {'accuracy': 0.7266899563318777}

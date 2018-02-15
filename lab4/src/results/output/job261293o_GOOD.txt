@@ -1,0 +1,6 @@
+[2000, 800, 600, 15]
+['sigmoid', 'sigmoid', 'sigmoid', 'sigmoid']
+['sigmoid', 'sigmoid', 'sigmoid', 'softmax']
+Training start
+Clock time difference: 276.530000
+EvalMetric: {'accuracy': 0.7054847161572052}
